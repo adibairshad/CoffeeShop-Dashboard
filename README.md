@@ -1,32 +1,29 @@
+
+
 # Coffee Sales Dashboard
 
 ## Overview
-This Power BI dashboard provides an analytical view of coffee sales data for May 2023. It includes key metrics like total sales, total orders, and total quantity sold, alongside various visualizations to help track and understand sales performance across different product categories, store locations, and time periods.
+This repository contains the SQL script and Power BI dashboard used for analyzing coffee sales data. The dashboard is designed to provide insights into sales performance, customer preferences, and operational efficiency within the coffee sales industry.
 
-## Key Features
-- **Total Sales Overview:** Shows the total sales amount for May 2023, with a percentage comparison to the last month.
-- **Total Orders & Quantity Sold:** Displays the total number of orders and the quantity sold for the selected month, with a comparison to the previous month.
-- **Sales Trend Over Time:** A bar chart visualizing the sales trend over the selected period, highlighting average sales and specific daily performance.
-- **Product Category Performance:** Breaks down total sales by product category, showing percentage growth or decline compared to the last month.
-- **Top Selling Products:** Lists the top 10 selling product types with sales figures and percentage changes.
-- **Sales by Day and Hour:** A heatmap showing sales performance across different days of the week and hours of the day, with total sales figures provided for each day.
-- **Sales by Store Location:** Compares sales across different store locations, with an indication of percentage change from the last month.
-- **Weekend vs. Weekday Sales:** A doughnut chart that provides a comparison between weekend and weekday sales.
+## Files in the Repository
+- **`coffee_sales.sql`:** SQL script that creates and populates the database tables used for the analysis. This script includes all necessary data transformations and aggregations required'
+- **Power BI Dashboard:** The `.pbix` file visualizes the data. It presents key metrics and trends in an easy-to-understand format.
 
-## Data Tables
-- **Transactions Table:** Contains the sales transactions data.
-- **Date Table:** A calendar table used for time-based calculations.
-- **Measures Table:** Holds all calculated measures used in the dashboard, including total sales, total orders, and more.
+## Prerequisites
+To use the SQL script and dashboard, you'll need the following:
+- **SQL Server (or compatible database system):** For running the `coffee_sales.sql` script.
+- **Power BI Desktop:** For loading the dashboard file and connecting it to your database.
 
-## How to Use
-1. **Clone the Repository:** Download the repository to your local machine.
-2. **Open Power BI Desktop:** Open the `.pbix` file using Power BI Desktop.
-3. **Explore the Dashboard:** Interact with the different visuals to gain insights into the coffee sales data.
-4. **Customize Data:** Replace the dataset with your own data to generate insights specific to your context.
+
+## Key Features of the Dashboard
+- **Total Sales, Orders, and Quantity Sold:** Overview metrics for the selected month, with comparisons to the previous month.
+- **Sales Trend Analysis:** Visual representation of daily sales trends within the selected period.
+- **Product Category Breakdown:** Sales distribution across various product categories like coffee, tea, and bakery items.
+- **Top Selling Products:** A list of the top-performing products by sales volume.
+- **Sales by Time:** Heatmap showing sales distribution across different days and hours.
+- **Location-based Sales:** Comparison of sales across different store locations.
 
 ## Customization
-- **Color Scheme:** The dashboard uses a brown-themed color scheme to match the coffee-related context. This can be customized in Power BI's "Format" pane.
-- **Filters:** The dashboard includes slicers for filtering by month and other criteria. These can be adjusted or expanded as needed.
-- **Calculated Measures:** Users can modify existing measures or create new ones to meet specific business requirements.
-
+- **SQL Script:** Modify the `coffee_sales.sql` script to include additional data or adjust the existing queries to fit your business needs.
+- **Power BI Dashboard:** Customize the visuals, color scheme, and calculated measures within Power BI to better align with your specific analysis goals.
 
